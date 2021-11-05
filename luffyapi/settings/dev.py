@@ -222,3 +222,9 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
     'Pragma',
 )
+
+# JWT配置
+import datetime
+JWT_AUTH = {
+    "JWT_EXPIRATION_DELTA":datetime.timedelta(weeks=1),
+}
